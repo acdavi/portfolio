@@ -12,3 +12,4 @@ Tarefas serão colocadas no github
 :up: Atualizações / Updates.  
 :beetle: Correção de bugs / Bug fix.  
 :checkered_flag: Release.  
+
