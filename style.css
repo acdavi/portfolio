@@ -19,7 +19,9 @@
     flex-direction : column;
     justify-content: space-evenly;
     cursor         : pointer;
+    opacity: 0;
     transition: all 1.5s;
+    animation: moveHamburguer 1s 0.5s forwards;
 }
 
 .show-menu .hamburguer{
@@ -153,8 +155,8 @@ header {
 }
 
 .banner button:hover {
-    opacity: 0.9;
-    /*color: #000;*/
+    opacity: 0.1;
+    color: #000;
 }
 
 @keyframes moveBanner {
@@ -166,6 +168,18 @@ header {
         transform: translateY(0) rotate(0);
         opacity  : 1;
     }
+}
+
+@keyframes moveHamburguer {
+    0% {
+        transform: translateX(10rem) rotateY(-30deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0);
+        opacity  : 1;
+    }
+
 }
 
 .sidebar {
