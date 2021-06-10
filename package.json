@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portifólio de Desenvolvedor ## Tarefas",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "./node_modules/.bin/gh-pages -d dist/ -d dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acdavi/portfolio.git"
+  },
+  "author": "Davi A. Cândido",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acdavi/portfolio/issues"
+  },
+  "homepage": "https://github.com/acdavi/portfolio#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.0"
+  }
+}
