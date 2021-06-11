@@ -338,7 +338,7 @@ header {
     .conhecimentos {
         display              : grid;
         grid-template-columns: 1fr;
-        grid-template-rows   : 15rem;
+        grid-template-rows   : 10fr;
         row-gap              : 1rem;
         justify-content      : center;
     }
