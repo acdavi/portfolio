@@ -157,11 +157,11 @@ header {
     border-radius : 5px;
     cursor        : pointer;
     opacity       : 0;
-    animation     : moveBanner 1s 1s forwards
+    animation     : moveBanner 1s 1s forwards;
+    transition: 1s;
 }
 
 .banner button:hover {
-    opacity: 0.1;
     color: #000;
 }
 
@@ -249,10 +249,48 @@ header {
     background-color: #24fe41;
 }
 
+.sessao-conhecimentos{
+    background-color: #f5f5f5;
+}
+
+.sessao-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao-header h1{
+    font-family: var(--main-font);
+    font-size: 3rem;
+    color: rgb(46, 51, 59);
+    border-bottom: solid 3px rgb(35, 208, 73);
+    margin-bottom: 2rem;
+}
+
 .conhecimentos{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(6, 3rem);
+    grid-template-rows: repeat(6, 6rem);
+    row-gap: 1rem;
+}
+
+.conhecimento-header{
+    display: flex;
+    align-items: center;
+    color: rgb(46, 51, 59);
+}
+
+.conhecimento-header i{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.conhecimento-header h3{
+    font-family: var(--main-font);
+}
+
+.conhecimento-text {
+    font-family: var(--second-font);
 }
 
 .conhecimento:nth-child(1){
@@ -283,4 +321,15 @@ header {
 .conhecimento:nth-child(6){
     grid-column: 11/14;
     grid-row: 5/-1;
+}
+
+.conhecimento-img-wrapper{
+    grid-column: 7/10;
+    grid-row: 3/6;
+    width: 100%;
+}
+
+.conhecimento-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
 }
