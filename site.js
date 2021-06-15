@@ -1,10 +1,10 @@
 const express = require('express');
 const PORT = 3000;
-const HOST = 'localhost'
+const HOST = '0.0.0.0';
 const site = express();
 const path = require('path');
 
-site.use(express.static(path.join(__dirname, 'public')))
+site.use(express.static(path.join(__dirname, 'public')));
 
 
 
