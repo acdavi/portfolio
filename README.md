@@ -13,3 +13,4 @@ Tarefas serão colocadas no github
 :beetle: Correção de bugs / Bug fix.  
 :checkered_flag: Release.  
 
+### Versão local do site
